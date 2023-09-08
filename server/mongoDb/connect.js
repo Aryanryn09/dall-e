@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const connectDB = (url) => {
   mongoose.set("strictQuery", true);
@@ -9,3 +9,5 @@ const connectDB = (url) => {
     })
     .catch((err) => console.log(err));
 };
+
+export default connectDB;
